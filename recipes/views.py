@@ -11,13 +11,9 @@ def home(request):
     })
 
 
-def sobre(request):
+def recipe(request, id):
     ...
     # return HTTP response
-    return HttpResponse("sobre")
-
-
-def contato(request):
-    ...
-    # return HTTP response
-    return HttpResponse("CONTATO")
+    return render(request, 'recipes/pages/home.html', context={
+        'name': 'Matheus Henrique',
+    })
